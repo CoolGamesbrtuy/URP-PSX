@@ -1,0 +1,11 @@
+Model Information:
+* title:	2007 Renault Megane CC
+* source:	https://sketchfab.com/3d-models/2007-renault-megane-cc-337ab3c6113e430cb94896c1afb4fcc6
+* author:	3DCars (https://sketchfab.com/3DCarss)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2007 Renault Megane CC" (https://sketchfab.com/3d-models/2007-renault-megane-cc-337ab3c6113e430cb94896c1afb4fcc6) by 3DCars (https://sketchfab.com/3DCarss) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

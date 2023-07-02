@@ -1,0 +1,11 @@
+Model Information:
+* title:	Iveco Van - PS1 Low Poly
+* source:	https://sketchfab.com/3d-models/iveco-van-ps1-low-poly-3f33f0df2f674ca6b4988c5ec2a216d0
+* author:	Wersaus33 (https://sketchfab.com/wersaus33)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Iveco Van - PS1 Low Poly" (https://sketchfab.com/3d-models/iveco-van-ps1-low-poly-3f33f0df2f674ca6b4988c5ec2a216d0) by Wersaus33 (https://sketchfab.com/wersaus33) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

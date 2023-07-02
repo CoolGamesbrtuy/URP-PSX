@@ -1,0 +1,11 @@
+Model Information:
+* title:	DINER
+* source:	https://sketchfab.com/3d-models/diner-15789955fbe642b19994da3cd9e725a8
+* author:	Elbolillo (https://sketchfab.com/Elbolilloduro)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DINER" (https://sketchfab.com/3d-models/diner-15789955fbe642b19994da3cd9e725a8) by Elbolillo (https://sketchfab.com/Elbolilloduro) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
