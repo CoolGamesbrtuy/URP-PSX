@@ -21,6 +21,13 @@ public class SC_FPSController : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
+    // Control customization variables
+    public KeyCode jumpKey = KeyCode.Space;
+    public string horizontalAxis = "Horizontal";
+    public string verticalAxis = "Vertical";
+    public string mouseXAxis = "Mouse X";
+    public string mouseYAxis = "Mouse Y";
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -37,12 +44,12 @@ public class SC_FPSController : MonoBehaviour
         Vector3 right = transform.TransformDirection(Vector3.right);
         // Press Left Shift to run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
+        float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis(verticalAxis) : 0;
+        float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis(horizontalAxis) : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
+        if (Input.GetKey(jumpKey) && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpSpeed;
         }
@@ -65,10 +72,10 @@ public class SC_FPSController : MonoBehaviour
         // Player and Camera rotation
         if (canMove)
         {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX += -Input.GetAxis(mouseYAxis) * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis(mouseXAxis) * lookSpeed, 0);
         }
     }
 }

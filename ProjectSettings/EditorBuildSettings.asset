@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CarCrash.unity
+    guid: ce9f7326c1032324596c4c05c8c4d607
+  - enabled: 1
+    path: Assets/Scenes/MainDoorEntrance.unity
+    guid: 6bf347639b972564f94ad596043f620d
+  - enabled: 1
+    path: Assets/Scenes/Diner.unity
+    guid: ac5cf63bbe1663a4a96d0ba0009b6568
+  - enabled: 1
+    path: Assets/Scenes/Bathroom.unity
+    guid: 0ec85f4c687b59949b9545deea27fdf1
   m_configObjects: {}

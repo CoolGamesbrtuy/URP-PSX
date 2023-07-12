@@ -132,7 +132,7 @@ Material:
     - Vector1_B2CC132F: 16
     - Vector1_B9994903: 11
     - Vector1_E8746023: 16
-    - _AffineTextureWarpingWeight: 1
+    - _AffineTextureWarpingWeight: 0.185
     - _AlphaClip: 0
     - _AlphaClippingDitherIsEnabled: 0
     - _BRDFMode: 0
