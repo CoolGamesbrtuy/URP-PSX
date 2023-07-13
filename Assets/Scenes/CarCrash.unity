@@ -282,7 +282,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c720d469dbe6c7b4984619da5819b79f, type: 3}
-    m_FontSize: 47
+    m_FontSize: 37
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 8
@@ -318,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: -486.7}
+  m_AnchoredPosition: {x: 6, y: -469.51}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.49999994}
 --- !u!1 &559868071
@@ -561,7 +561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756142282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.164, y: -2.264, z: 10.465}
+  m_LocalPosition: {x: -10.164, y: -2.264, z: 10.201}
   m_LocalScale: {x: 0.82, y: 1.63, z: 1.847257}
   m_Children: []
   m_Father: {fileID: 0}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 2160, y: 3840}
+  m_ReferenceResolution: {x: 3840, y: 2160}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1169,18 +1169,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkingSpeed: 2
-  runningSpeed: 2.5
+  runningSpeed: 2.5675
   jumpSpeed: 2
   gravity: 10
   playerCamera: {fileID: 79448159}
   lookSpeed: 1.7
   lookXLimit: 90
   canMove: 1
-  jumpKey: 32
-  horizontalAxis: Horizontal
-  verticalAxis: Vertical
-  mouseXAxis: Mouse X
-  mouseYAxis: Mouse Y
 --- !u!143 &2071011841
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1289,7 +1284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a549f325ea223434ab09fed82916eed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 79448155}
+  camAnim: {fileID: 79448157}
+  walking: 0
 --- !u!4 &8682526209953677
 Transform:
   m_ObjectHideFlags: 0

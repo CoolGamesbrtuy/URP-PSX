@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sapo estilo ps1
+* source:	https://sketchfab.com/3d-models/sapo-estilo-ps1-7954957fbff44ef298cef4123a13a391
+* author:	Moustache_Cat (https://sketchfab.com/moustachecat)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sapo estilo ps1" (https://sketchfab.com/3d-models/sapo-estilo-ps1-7954957fbff44ef298cef4123a13a391) by Moustache_Cat (https://sketchfab.com/moustachecat) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -9,12 +9,39 @@ EditorBuildSettings:
     path: Assets/Scenes/CarCrash.unity
     guid: ce9f7326c1032324596c4c05c8c4d607
   - enabled: 1
-    path: Assets/Scenes/MainDoorEntrance.unity
+    path: Assets/Scenes/MainDoorExit.unity
     guid: 6bf347639b972564f94ad596043f620d
   - enabled: 1
     path: Assets/Scenes/Diner.unity
     guid: ac5cf63bbe1663a4a96d0ba0009b6568
   - enabled: 1
+    path: Assets/Scenes/BathroomDoor.unity
+    guid: 106ef7bfc14d74242aadf2f7b0e25156
+  - enabled: 1
     path: Assets/Scenes/Bathroom.unity
     guid: 0ec85f4c687b59949b9545deea27fdf1
+  - enabled: 1
+    path: Assets/Scenes/2ndVisit/BathroomDoor 1.unity
+    guid: ee9feca51b9d49b49a9fffdfa238630f
+  - enabled: 1
+    path: Assets/Scenes/2ndVisit/Diner 1.unity
+    guid: c97f86634529b83468e012a7c9421e72
+  - enabled: 1
+    path: Assets/Scenes/KitchenDoor.unity
+    guid: 929853d630aa48448be741cd394f7772
+  - enabled: 1
+    path: Assets/Scenes/Kitchen.unity
+    guid: 657e8a7946b125a45a304162b82a283e
+  - enabled: 1
+    path: Assets/Scenes/2ndVisit/KitchenDoor 1.unity
+    guid: d7d7e99ebcb80a8439ee267ffd3276f3
+  - enabled: 1
+    path: Assets/Scenes/MainDoorEntrance.unity
+    guid: f8f7834d99b492d46ad9e96b437558de
+  - enabled: 1
+    path: Assets/Scenes/2ndVisit/Diner 2.unity
+    guid: 7d986c92e21b33646a0498619fd2de7e
+  - enabled: 1
+    path: Assets/Scenes/2ndVisit/CarCrash 1.unity
+    guid: 7e2b191924c289d4e8d765dc0de25a82
   m_configObjects: {}

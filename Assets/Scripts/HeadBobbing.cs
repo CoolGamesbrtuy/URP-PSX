@@ -4,66 +4,39 @@ using UnityEngine;
 
 public class HeadBobbing : MonoBehaviour
 {
+    public Animator camAnim;
+    public bool walking;
 
-    public GameObject Camera;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        // Check gamepad input for movement
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        if (horizontalInput != 0 || verticalInput != 0)
         {
-            StartBobbing();
+            camAnim.ResetTrigger("idle");
+            walking = true;
+            camAnim.ResetTrigger("sprint");
+            camAnim.SetTrigger("walk");
+            
+            if (walking)
+            {
+                // Check gamepad input for sprinting
+                if (Input.GetButton("Sprint"))
+                {
+                    camAnim.ResetTrigger("walk");
+                    camAnim.ResetTrigger("idle");
+                    camAnim.SetTrigger("sprint");
+                }
+            }
         }
-
-        if (Input.GetKey(KeyCode.S))
+        else
         {
-            StartBobbing();
+            camAnim.ResetTrigger("sprint");
+            walking = false;
+            camAnim.ResetTrigger("walk");
+            camAnim.SetTrigger("idle");
         }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            StartBobbing();
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            StartBobbing();
-        }
-
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            StopBobbing();
-        }
-
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            StopBobbing();
-        }
-
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            StopBobbing();
-        }
-
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            StopBobbing();
-        }
-    }
-
-    void StartBobbing()
-    {
-        Camera.GetComponent<Animator>().Play("HeadBobbing");
-    }
-
-    void StopBobbing()
-    {
-        Camera.GetComponent<Animator>().Play("New State");
     }
 }

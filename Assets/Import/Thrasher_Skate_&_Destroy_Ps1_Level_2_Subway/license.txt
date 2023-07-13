@@ -1,0 +1,11 @@
+Model Information:
+* title:	Thrasher Skate & Destroy Ps1 Level 2 Subway
+* source:	https://sketchfab.com/3d-models/thrasher-skate-destroy-ps1-level-2-subway-7265761b1060418f87d8c3a5e56b0938
+* author:	rolphmotion (https://sketchfab.com/rolphmotion)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Thrasher Skate & Destroy Ps1 Level 2 Subway" (https://sketchfab.com/3d-models/thrasher-skate-destroy-ps1-level-2-subway-7265761b1060418f87d8c3a5e56b0938) by rolphmotion (https://sketchfab.com/rolphmotion) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

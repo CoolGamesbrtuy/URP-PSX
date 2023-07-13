@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-
 public class SC_FPSController : MonoBehaviour
 {
     public float walkingSpeed = 7.5f;
@@ -21,13 +20,6 @@ public class SC_FPSController : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
-    // Control customization variables
-    public KeyCode jumpKey = KeyCode.Space;
-    public string horizontalAxis = "Horizontal";
-    public string verticalAxis = "Vertical";
-    public string mouseXAxis = "Mouse X";
-    public string mouseYAxis = "Mouse Y";
-
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -44,12 +36,12 @@ public class SC_FPSController : MonoBehaviour
         Vector3 right = transform.TransformDirection(Vector3.right);
         // Press Left Shift to run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis(verticalAxis) : 0;
-        float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis(horizontalAxis) : 0;
+        float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
+        float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (Input.GetKey(jumpKey) && canMove && characterController.isGrounded)
+        if (Input.GetButtonDown("Jump") && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpSpeed;
         }
@@ -58,9 +50,7 @@ public class SC_FPSController : MonoBehaviour
             moveDirection.y = movementDirectionY;
         }
 
-        // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
-        // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
-        // as an acceleration (ms^-2)
+        // Apply gravity
         if (!characterController.isGrounded)
         {
             moveDirection.y -= gravity * Time.deltaTime;
@@ -72,10 +62,15 @@ public class SC_FPSController : MonoBehaviour
         // Player and Camera rotation
         if (canMove)
         {
-            rotationX += -Input.GetAxis(mouseYAxis) * lookSpeed;
+            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
+
+            // Rotate the player's body left and right
+            float rotationY = Input.GetAxis("Mouse X") * lookSpeed;
+            transform.rotation *= Quaternion.Euler(0, rotationY, 0);
+
+            // Rotate the camera up and down
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis(mouseXAxis) * lookSpeed, 0);
         }
     }
 }
