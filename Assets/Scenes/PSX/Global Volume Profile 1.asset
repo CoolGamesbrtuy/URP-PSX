@@ -147,7 +147,7 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.6666667, g: 0.5372549, b: 0.18823531, a: 1}
+    m_Value: {r: 0.26415092, g: 0.16668007, b: 0.12833749, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
@@ -297,7 +297,7 @@ MonoBehaviour:
     m_Value: 1
   scanlineSharpness:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.178
     min: 0
     max: 1
   imageSharpness:

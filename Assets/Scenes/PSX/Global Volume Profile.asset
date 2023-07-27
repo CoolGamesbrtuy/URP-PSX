@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Value: 1
   bloom:
     m_OverrideState: 1
-    m_Value: 0.0625
+    m_Value: 0
     min: 0
     max: 1
   grateMaskMode:
@@ -33,7 +33,7 @@ MonoBehaviour:
     m_Value: 1
   scanlineSharpness:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.178
     min: 0
     max: 1
   imageSharpness:
@@ -122,7 +122,7 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   isFrameLimitEnabled:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   frameLimit:
     m_OverrideState: 1
@@ -192,11 +192,11 @@ MonoBehaviour:
     max: 1
   distanceMin:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.09
     min: 0
   distanceMax:
     m_OverrideState: 1
-    m_Value: 32.45
+    m_Value: 23.97
     min: 0.00001
   fogFalloffCurve:
     m_OverrideState: 1
@@ -242,7 +242,7 @@ MonoBehaviour:
     m_Value: 0
   colorLayer1:
     m_OverrideState: 1
-    m_Value: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
@@ -287,10 +287,10 @@ MonoBehaviour:
   m_AdvancedMode: 0
   lightingIsEnabled:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   bakedLightingMultiplier:
     m_OverrideState: 1
-    m_Value: 0.54
+    m_Value: 0.21
     min: 0
   vertexColorLightingMultiplier:
     m_OverrideState: 1
